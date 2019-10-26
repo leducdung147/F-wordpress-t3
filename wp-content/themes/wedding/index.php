@@ -1,19 +1,21 @@
-<link href="/wordpress/wp-content/themes/wedding/assets/css/8.css" rel="stylesheet" type="text/css" />
-<?php get_header(); ?>
+
+<?php get_header('custom'); ?>
 
 <?php
 	
   // Display post
   if ( have_posts() ) : while ( have_posts() ) : the_post();?>
-  
-<?php if ( in_category( 'banner1' ) ) : ?>
-<!-- Navigation -->
-<?php the_content();?>
-      <?php  endif; ?>
-      <?php  
+       <div class="container my-5">
+  <img src="<?php the_post_thumbnail_url('largest');?>" alt="" class="img-fluid">
+
+    
+      <div class="title-post h1"><?php the_title();?></div>  </h2>
+ 
+      <?php the_content(); ?>
+      </div>
+   
+     <?php
 endwhile;
 endif;
 ?>
-<?php
-get_template_part( 'template-parts/3/3-content', 'none' );?>
 <?php get_footer(); ?>

@@ -4,7 +4,7 @@
         <div class="container d-flex align-items-center">
 
           <div class="mx-auto text-center">
-            <h1 class="wow zoomIn title d-flex align-items-end pb-5">About </h1>
+            <h1 class="wow zoomIn title d-flex align-items-center pt-5 display-1 "><?php the_title() ?></h1>
             
           </div>
         </div>

@@ -1,19 +1,4 @@
-<?php
-	
-  // Display post
-  if ( have_posts() ) : while ( have_posts() ) : the_post();?>
-  
-<?php if ( in_category( 'navbar' ) ) : ?>
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="<?php the_post_thumbnail_url('largest');?>" class=" img-fluid" alt=""></a>
-      <?php the_content();?>
-      <?php  endif; ?>
-      <?php  
-endwhile;
-endif;
-?>
+
 <?php wp_footer(); ?>
 
 </body>
@@ -31,19 +16,40 @@ endif;
   <script src="/wordpress/wp-content/themes/wedding/assets//js/script.js"></script>
   <script src='/wordpress/wp-content/themes/wedding/assets//js/swiper.min.js'></script>
 <script>
+  function darkNav() {
+    //if ( $('.swiper-slide.swiper-slide-active').hasClass('dark') ) { // `this` rather?
+    if ( $(this).find('.swiper-slide-active') ) {
+    
+      $('.swiper-container h1').toggleClass('zoomIn');
+     
+    } else {
+      alert();
+    }
+  }
 $(document).ready(function() {
+
+  
   var swiper = new Swiper('.swiper-container', {
 
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      speed: 700,
-       
-        autoplay: 100,
+      speed:700,
+       effect: 'fade',
+       autoplay: {
+    delay: 5000,
+  },
         autoplayStopOnLast: false,
+        on: {
+      init: darkNav,          // do also on init
+      slideChange: darkNav    // is this needed?
+    }
         
     });
-  new WOW().init();
+   
+  
+
+
 });</script>
 

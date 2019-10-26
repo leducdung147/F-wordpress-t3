@@ -32,8 +32,8 @@
   <link href="/wordpress/wp-content/themes/wedding/assets/css/swiper.min.css" rel="stylesheet" type="text/css" />
   <link href="/wordpress/wp-content/themes/wedding/assets/css/3.css" rel="stylesheet" type="text/css" />
   <link href="/wordpress/wp-content/themes/wedding/assets/css/8.css" rel="stylesheet" type="text/css" />
-  <link href="/wordpress/wp-content/themes/wedding/assets/css/14.css" rel="stylesheet" type="text/css" />
- 
+
+  <link href="/wordpress/wp-content/themes/wedding/assets/css/animate.css" rel="stylesheet" type="text/css" />
   <!-- Custom styles for this template -->
   <link href="/wordpress/wp-content/themes/wedding/assets/css/grayscale.css" rel="stylesheet">
 
@@ -48,8 +48,11 @@ if ( in_category( 'navbar' ) ) :
    
  get_template_part( 'template-parts/1/1-content', 'none' );?>
 <?php  endif; ?><?php endwhile; wp_reset_query();?>
-
-
+<style>
+*{
+  
+}
+</style>
 	
 
 
