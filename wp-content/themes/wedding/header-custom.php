@@ -29,13 +29,13 @@
   
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="/wordpress/wp-content/themes/wedding/assets/css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+  
   <link href="/wordpress/wp-content/themes/wedding/assets/css/swiper.min.css" rel="stylesheet" type="text/css" />
-  <link href="/wordpress/wp-content/themes/wedding/assets/css/3.css" rel="stylesheet" type="text/css" />
-  <link href="/wordpress/wp-content/themes/wedding/assets/css/8.css" rel="stylesheet" type="text/css" />
+  <link href="/wordpress/wp-content/themes/wedding/assets/css/14.css" rel="stylesheet" type="text/css" />
 
-  <link href="/wordpress/wp-content/themes/wedding/assets/css/animate.css" rel="stylesheet" type="text/css" />
   <!-- Custom styles for this template -->
-  <link href="/wordpress/wp-content/themes/wedding/assets/css/grayscale.css" rel="stylesheet">
+  <link href="/wordpress/wp-content/themes/wedding/assets/css/banner.css" rel="stylesheet">
 
 </head>
 <?php
@@ -44,15 +44,11 @@ query_posts( $args );
  
 // The Loop
 while ( have_posts() ) : the_post();
-if ( in_category( 'navbar' ) ) : 
+if ( in_category( 'navbar2' ) ) : 
    
  get_template_part( 'template-parts/1/1-content', 'none' );?>
 <?php  endif; ?><?php endwhile; wp_reset_query();?>
-<style>
-*{
-  
-}
-</style>
+
 	
 
 

@@ -3,3 +3,13 @@
     padding: 10x 10px;
     text-decoration: none;
 }
+@media (max-width: 768px) {
+    .card-columns {
+        column-count: 1!important;
+    }
+}
+@media (max-width: 992px) {
+    .card-columns {
+        column-count: 2;
+    }
+}

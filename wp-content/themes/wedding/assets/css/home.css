@@ -30,6 +30,7 @@ h1{
 #mainNav {
   min-height: 56px;
   background-color: rgba(0, 0, 0, 0.842);
+  position: absolute!important;
 }
 
 #mainNav .navbar-toggler {
