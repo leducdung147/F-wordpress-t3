@@ -15,14 +15,13 @@ get_template_part( 'template-parts/8/8-content');?>
 
 <?php
 // The Query
+
 query_posts( $args );
  
 // The Loop
 while ( have_posts() ) : the_post();
 if ( in_category( array('about-page', 'whatwedo' )) ) : 
    
-
-
 get_template_part( 'template-parts/10/10-content');?>
 <?php  endif; ?><?php endwhile; wp_reset_query();?>
 

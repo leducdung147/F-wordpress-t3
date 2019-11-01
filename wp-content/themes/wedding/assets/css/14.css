@@ -3,6 +3,10 @@
     padding: 10x 10px;
     text-decoration: none;
 }
+.readmore:hover{
+    background:rgb(73, 88, 75);
+   
+}
 @media (max-width: 768px) {
     .card-columns {
         column-count: 1!important;
