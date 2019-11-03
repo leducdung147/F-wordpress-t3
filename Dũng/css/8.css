@@ -1,0 +1,27 @@
+.banner2{
+     background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 90%, #161616 100%), url("../img/SS_California_Wedding_Photographer-1.jpg");
+  
+    min-height: 45vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+}
+
+header h1{
+    font-size: 8.5rem;
+   min-height: 45vh;
+   color: white;
+  
+
+}
+svg{
+    transform: rotate(180deg);
+    fill: white;
+    color:white;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
