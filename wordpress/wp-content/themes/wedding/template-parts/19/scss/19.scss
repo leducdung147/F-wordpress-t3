@@ -1,0 +1,31 @@
+.celebration-banner{
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.7) 0%, rgba(22, 22, 22, 0.7) 90%, #161616 100%), url("https://nikah1.themesawesome.com/wp-content/uploads/sites/96/2017/11/freestocks-org-83034.jpg");
+  
+    min-height: 70vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+   clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+   h1{
+   color: white;
+  
+  font-size: 5vw;
+  font-weight: 400;
+  
+}
+
+.title{
+    color: white;
+}
+svg{
+    
+    fill: white;
+    color:white;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+}
